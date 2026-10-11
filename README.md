@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hon. Clarence Namunyu Kasali — Ikolomani 2027 campaign website
 
 Static HTML, CSS and vanilla JavaScript. No framework, no database. Deploys to ordinary shared hosting / cPanel.
@@ -47,3 +48,6 @@ Everything publishable lives in `js/data.js`: `UPDATES`, `EVENTS`, `CONSULTATION
 ## Tests performed (9 Oct 2026, headless Chromium, offline CDNs)
 All 14 pages at 390 / 820 / 1440 px (rechecked after the redesign, nav also checked at 1350, 1366 and 1920 px): no console or JS errors, no horizontal overflow, no missing local assets or broken internal links/anchors, no duplicate ids, balanced HTML. Verified: mobile menu (open/close/Esc/aria), ward filter and deep links, ward figures 17,095 + 15,195 + 13,605 + 10,404 = 56,299 matching IEBC, computed shares 30.4 / 27.0 / 24.2 / 18.5 %, form validation summaries and per-field errors, ward/category pre-selection from links, volunteer "choose at least one" rule, and that forms report "nothing was sent" when no delivery service answers. No trace of the previous campaign's names, slogan, number or domain remains.
 Not tested: real email delivery (`api/submit.php` was written but PHP was not available here), rendering of the Montserrat/Font Awesome CDN assets, real devices, screen readers.
+=======
+# Clarence-Namunyu-Kasali
+>>>>>>> 136c769e3298e7c6e1a4d4df01efcd819d1844dc
