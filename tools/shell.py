@@ -50,7 +50,7 @@ def head(title, desc, path, og_image='img/og-image.jpg', ld=None, noindex=False)
 <link rel="icon" href="assets/images/brand/favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32"><link rel="icon" href="icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">
 <link rel="preload" href="fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/source-serif-4-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" href="css/main.css?v=4">{ld_html}</head>
+<link rel="stylesheet" href="css/main.css?v=8">{ld_html}</head>
 '''
 
 

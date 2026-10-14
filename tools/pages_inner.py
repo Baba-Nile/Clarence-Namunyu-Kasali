@@ -11,14 +11,27 @@ def build_about():
     blazer = picture('clarence-blazer', [480, 800, 1053], '(min-width:900px) 340px, 240px',
                      'Hon. Clarence Namunyu Kasali in a maroon blazer and cream shirt, resting his arms on a table', 1053, 1493, fetch=True)
     suit = picture('clarence-suit', [480, 800, 1200], '(min-width:900px) 34vw, 340px', 'Portrait of Hon. Clarence Namunyu Kasali in a dark blazer and light blue shirt', 1254, 1254)
-    body = page_hero('', 'About Clarence', 'Aspiring Member of Parliament for Ikolomani Constituency, Kakamega County, and candidate in the 2027 general election.', ['About'], fig=blazer) + f'''
-<section class="sec"><div class="wrap about-intro"><p class="big">His campaign rests on one idea: sovereign power belongs to the people, and a representative exists to serve them.</p>
+    body = page_hero('', 'About Clarence', 'Educationist, community leader and aspiring Member of Parliament for Ikolomani Constituency, Kakamega County.', ['About'], fig=blazer) + f'''
+<section class="sec"><div class="wrap bio-g"><aside class="bio-side"><figure>{suit}</figure>
+<div class="glance"><h2>At a glance</h2><dl>
+<div><dt>Born</dt><dd>1981, Luhakayu Village, Malinya Sublocation, Idakho Central Ward, Shirumba Location</dd></div>
+<div><dt>Constituency</dt><dd>Ikolomani, Kakamega County</dd></div>
+<div><dt>Profession</dt><dd>Educationist; Founder and Director, The Holyway Junior School</dd></div>
+<div><dt>Service</dt><dd>Member, Rotary Club of Gachie</dd></div></dl></div></aside>
+<div class="bio"><p class="kicker">Biography</p><h2>Educationist, community leader and social impact advocate</h2>
+<p class="bio-lead">Born in 1981 in Luhakayu Village, Malinya Sublocation, Idakho Central Ward, Shirumba Location, in Ikolomani Constituency, Kakamega County, Western Kenya, he is a passionate educationist, community leader, and social impact advocate committed to transforming lives and creating meaningful change in society.</p>
+<p>He began his education at Malinya Primary School before joining Our Lady of Assumption Mixed Secondary School in Shitoli, where he was among the pioneer students. Driven by a strong commitment to education, he pursued a Certificate in Early Childhood Education at Professional ECE College in Limuru, followed by a Diploma in Education at St. Mary&rsquo;s Teacher College in Nakuru.</p>
+<ol class="tline" aria-label="Education and service">
+<li><b>Malinya Primary School</b><span>Primary education</span></li>
+<li><b>Our Lady of Assumption Mixed Secondary School, Shitoli</b><span>Among the pioneer students</span></li>
+<li><b>Professional ECE College, Limuru</b><span>Certificate in Early Childhood Education</span></li>
+<li><b>St. Mary&rsquo;s Teacher College, Nakuru</b><span>Diploma in Education</span></li>
+<li><b>The Holyway Junior School</b><span>Founder and Director</span></li>
+<li><b>Rotary Club of Gachie</b><span>Active member</span></li></ol>
+<p>As the Founder and Director of The Holyway Junior School, he is dedicated to nurturing young minds, promoting quality education, and creating opportunities for future generations. Beyond education, he is an active member of the Rotary Club of Gachie, where he embraces the spirit of service, fellowship, and community development.</p>
+<p>His life and work are guided by a deep passion for empowering people, uplifting communities, and making a lasting positive impact on society. Through education, leadership, and service, he continues to champion meaningful change and inspire others to contribute to the greater good.</p></div></div></section>
+<section class="sec sec--warm"><div class="wrap about-intro"><p class="big">His campaign rests on one idea: sovereign power belongs to the people, and a representative exists to serve them.</p>
 <div><p>The message echoes the opening principle of Kenya&rsquo;s Constitution (Article 1). For Ikolomani, it means residents are never bystanders when decisions are made about their land, their work and their public services.</p>
-<p>That is why the campaign begins with land, the safety and dignity of artisanal miners, and open, accountable representation.</p></div></div></section>
-<section class="sec sec--warm"><div class="wrap about-bio"><figure>{suit}</figure>
-<div><h2>A campaign for land, safety and accountability</h2>
-<p>A Member of Parliament makes laws, oversees public power and represents constituents. Clarence&rsquo;s campaign proposes to use all three: to ask hard questions on behalf of residents, to push for clearer protections where land and mining are concerned, and to report back in public.</p>
-<p>It also proposes to be honest about limits, saying plainly where county government, regulators or national agencies hold the responsibility, so that no one is promised what an MP cannot deliver.</p>
 <div class="actions"><a class="btn" href="manifesto.html">Read the manifesto</a><a class="link" href="gold-land-mining.html">Gold &amp; Land</a></div></div></div></section>
 <section class="sec"><div class="wrap values-head"><div><h2>What the campaign stands for</h2></div>
 <ul class="values"><li><b>Accountability</b><span>A public record of what residents raise and what is done about it.</span></li>
@@ -28,7 +41,7 @@ def build_about():
 <li><b>Honesty about limits</b><span>No promises beyond what an MP can lawfully deliver.</span></li></ul></div></section>
 <section class="sec sec--warm sec--tight"><div class="wrap close"><h2>Help shape the priorities.</h2><div><a class="btn" href="community.html#form">Share a concern</a><ul><li><a class="link" href="volunteer.html">Volunteer in your ward</a></li></ul></div></div></section>'''
     return page('about.html', f'About Clarence | {NAME}, Ikolomani 2027',
-                'About Hon. Clarence Namunyu Kasali, aspiring Member of Parliament for Ikolomani: the idea behind his 2027 campaign, what it stands for and how it will work.', body)
+                'Biography of Hon. Clarence Namunyu Kasali, educationist, community leader and aspiring Member of Parliament for Ikolomani: his education, The Holyway Junior School, Rotary service and 2027 campaign.', body)
 
 
 def two_col(form_html, side_html, h):
